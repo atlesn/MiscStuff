@@ -25,9 +25,6 @@ Copyright 2016 github.com/atlesn
 
 #define NUM_MAX 10
 
-const char *num_chars = "0123456789";
-const int num_chars_count = sizeof(*num_chars) - 1;
-
 struct num_sum {
 	int sum;
 };
@@ -85,9 +82,8 @@ int main (int argc, char **argv) {
 			printf("Number %llu:\n", i);
 			num_sum_dump(sums);
 			printf("DONE\n");
-			break;
+			exit (0);
 		}
 	}
-
-	exit (0);
+	exit(1);
 }
