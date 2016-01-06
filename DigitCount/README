@@ -1,0 +1,13 @@
+What we do:
+Find first number between the two arguments where
+the first digit counts all zeros in the number, the
+second counts all 1's, the third counts all 2's etc.
+
+Requirements:
+C99 compiler, 64bit for larger numbers
+
+To compile:
+$ gcc -o digitcount -std=C99 digitcount.c
+
+To run:
+./digitcount 1000000 9999999
